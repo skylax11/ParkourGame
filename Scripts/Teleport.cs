@@ -58,6 +58,8 @@ public class Teleport : MonoBehaviour
         }
         else
         {
+            GetComponent<MeshRenderer>().enabled = false;
+            GetComponent<Collider>().enabled = false;
             touched = true;
             if (collision.transform.CompareTag("Playerr"))
             {

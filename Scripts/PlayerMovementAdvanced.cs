@@ -399,7 +399,6 @@ public class PlayerMovementAdvanced : MonoBehaviour
         if(Physics.Raycast(transform.position, Vector3.down, out slopeHit, playerHeight * 0.5f + 0.3f))
         {
             float angle = Vector3.Angle(Vector3.up, slopeHit.normal);
-            print(angle);
             return angle < maxSlopeAngle && angle != 0;
         }
 
